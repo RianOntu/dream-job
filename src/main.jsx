@@ -5,6 +5,7 @@ import Root from './components/Root/Root'
 import Home from './components/Home/Home'
 import JobDetails from './components/JobDetails/JobDetails'
 import AppliedJobs from './components/AppliedJobs/AppliedJobs'
+import Statistics from './components/Statistics/Statistics'
 
 const router=createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router=createBrowserRouter([
      {
       path:'applied-jobs/viewdetails/:id',
       element:<JobDetails></JobDetails>
+     },
+     {
+      path:'statistics',
+      element:<Statistics></Statistics>
      }
     ]
   }
