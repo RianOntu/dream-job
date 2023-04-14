@@ -11,7 +11,7 @@ const SingleAppliedJob = ({appliedJob}) => {
               <div>
               <div className="d-flex">
                <div className="image">
-                    <img src={img} alt="" />
+                    <img className='image' src={img} alt="" />
                 </div>
                 <div className="description">
                     <h5><b>{job_title}</b></h5>
