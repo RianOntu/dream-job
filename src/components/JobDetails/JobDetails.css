@@ -1,0 +1,17 @@
+.job-details{
+    display:block;
+    width:100%;
+    background-color: #F9F9FF;
+    padding:150px;
+}
+.flex{
+    display:flex;
+}
+.small-margin{
+    margin-right: 4px;
+}
+.contact{
+    background-color: #F4F1FF;
+    padding:20px;
+    border-radius:5px;
+}
