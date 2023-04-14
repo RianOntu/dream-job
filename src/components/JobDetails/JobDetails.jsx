@@ -30,7 +30,39 @@ if(jobs.length>0){
     const {company_name,job_description,job_responsibility,educational_requirements,experiences,salary,job_title,phone,email,office_location}=jobdetails;
   
      const handleAddToLoaclstorage=(jobdetails)=>{
-        const appliedJo
+        const appliedJobs=[];
+        const previousAppliedJobs=JSON.parse(localStorage.getItem('appliedJobs'))
+        if(previousAppliedJobs){
+           const alreadyApplied=previousAppliedJobs.find(paj=>paj.id==jobdetails.id);
+           if(alreadyApplied){
+                Swal.fire({
+                    icon:"error",
+                    title:"Ooops!You already applied for this job!",
+                   
+                })
+           }
+           else{
+        
+            appliedJobs.push(...previousAppliedJobs,jobdetails)
+            localStorage.setItem('appliedJobs',JSON.stringify(appliedJobs))
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'You have applied for this job!',
+                
+              })
+           }
+        }
+        else{
+            appliedJobs.push(jobdetails);
+            localStorage.setItem('appliedJobs',JSON.stringify(appliedJobs))
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'You have applied for this job!',
+                
+              })
+        }
      }
   
     return (
