@@ -1,0 +1,14 @@
+img{
+    width:120px;
+    height:160px;
+    border:1px solid;
+    border-radius: 5px;
+}
+.description{
+    margin-left: 10px;
+}
+.total{
+    border:1px solid gray;
+    padding:10px;
+    border-radius: 5px;
+}
