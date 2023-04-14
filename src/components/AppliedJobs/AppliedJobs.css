@@ -4,3 +4,9 @@
     background-color: #F9F9FF;
     padding:150px;
 }
+.end{
+    align-items: end;
+}
+.margin{
+    margin-left: 10px;
+}
