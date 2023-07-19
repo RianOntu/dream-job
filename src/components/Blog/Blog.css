@@ -1,0 +1,12 @@
+.blog{
+    border:1px solid gray;
+    border-radius: 5px;
+    padding:15px;
+    margin-top: 10px;
+}
+.job-details{
+    display:block;
+    width:100%;
+    background-color: #F9F9FF;
+    padding:150px;
+}

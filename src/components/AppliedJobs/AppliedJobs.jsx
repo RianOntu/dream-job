@@ -36,7 +36,7 @@ const AppliedJobs = () => {
             <div className="row">
             <div className="col-12">
                 {
-                    jobs.map(appliedJob=><SingleAppliedJob appliedJob={appliedJob}></SingleAppliedJob>)
+                   jobs && jobs.map(appliedJob=><SingleAppliedJob appliedJob={appliedJob}></SingleAppliedJob>)
                 }
             </div>
             </div>
