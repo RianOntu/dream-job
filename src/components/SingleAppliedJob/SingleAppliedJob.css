@@ -12,3 +12,11 @@
     padding:10px;
     border-radius: 5px;
 }
+@media only screen and (max-width: 576px){
+    .location_salary{
+        flex-direction: column;
+    }
+    .total{
+        flex-direction: column;
+    }
+}

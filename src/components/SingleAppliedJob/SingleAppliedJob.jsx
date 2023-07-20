@@ -20,7 +20,7 @@ const SingleAppliedJob = ({appliedJob}) => {
                         <div className="btn btn-outline-primary">{location}</div>
                     <div className="btn btn-outline-primary description">{job_type}</div>
                     </div>
-                    <div className="d-flex mt-3">
+                    <div className="d-flex mt-3 location_salary">
                         <div className="d-flex ">
                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                         <p className='description'>{office_location}</p>
